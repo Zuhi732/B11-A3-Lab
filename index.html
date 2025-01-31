@@ -404,22 +404,112 @@
 </style>
 
 
-  <!-- Small Card 9 -->
-  <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
-    <img 
-      src="Assignment_03_Category_0001/c1-assets/cat-cartoon.png" 
-      alt="Pet Bed" 
-      class="w-16 h-16 mr-4 rounded-md bg-pink-50 p-1 border border-gray-300"
-    />
-    <div>
-      <h4 class="text-lg font-bold text-gray-900">Pet Bed</h4>
-      <p class="text-yellow-500 font-bold text-sm">4.5 ★</p>
-      <p class="text-gray-500">$39.99</p>
+  <!-- Vaccination Section -->
+<section class="bg-blue-50 py-16 animate-fadeInUp">
+  <div class="max-w-7xl mx-auto px-6">
+    <!-- Section Title -->
+    <h2 class="text-3xl font-bold text-center text-gray-900 mb-8 flex items-center justify-center gap-2">
+      <i class="fas fa-syringe text-blue-500 text-2xl"></i>
+       Vaccination Guide
+    </h2>
+
+    <!-- Content Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      
+      <!-- Left Side: Image -->
+      <div class="relative flex justify-center">
+        <img 
+          src="Assignment_03_Category_0001/c1-assets/close-up-veterinary-doctor-taking-care-pet.jpg" 
+          alt="Cat Vaccination" 
+          class="w-full md:w-3/4 rounded-lg shadow-lg animate-bounceHover"
+        />
+      </div>
+
+      <!-- Right Side: Vaccination Info -->
+      <div class="bg-white p-6 rounded-lg shadow-lg animate-slideUp">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+          <i class="fas fa-syringe text-blue-500"></i> Essential Vaccines
+        </h3>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3">
+            <i class="fas fa-check-circle text-green-500 text-lg"></i>
+            <div>
+              <p class="text-lg font-semibold text-gray-900">Rabies Vaccine</p>
+              <p class="text-gray-600 text-sm">Protects against the deadly rabies virus.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <i class="fas fa-check-circle text-green-500 text-lg"></i>
+            <div>
+              <p class="text-lg font-semibold text-gray-900">Feline Distemper</p>
+              <p class="text-gray-600 text-sm">Prevents severe viral infections in cats.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <i class="fas fa-check-circle text-green-500 text-lg"></i>
+            <div>
+              <p class="text-lg font-semibold text-gray-900">Feline Leukemia Vaccine</p>
+              <p class="text-gray-600 text-sm">Recommended for outdoor and social cats.</p>
+            </div>
+          </li>
+        </ul>
+        <button class="mt-6 px-6 py-3 text-white bg-blue-500 hover:bg-blue-600 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+          Schedule a Vaccination
+        </button>
+      </div>
+
     </div>
   </div>
-</div>
-
 </section>
+
+<!-- Tailwind Custom Animations -->
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeInUp {
+    animation: fadeInUp 1s ease-out;
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slideUp {
+    animation: slideUp 1s ease-out;
+  }
+
+  @keyframes bounceHover {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+  .animate-bounceHover:hover {
+    animation: bounceHover 0.5s ease-in-out infinite;
+  }
+</style>
+
+
+
 
 <!-- Everyday Low Price Section -->
 <section class="bg-white py-16 mb-16 animate-fadeInUp">
@@ -464,6 +554,9 @@
     </div>
   </div>
 </section>
+
+
+
 
 <!-- Tailwind Custom Animations -->
 <style>
