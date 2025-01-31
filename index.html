@@ -79,9 +79,9 @@
   <!-- Hero Section -->
 <section class="relative w-full min-h-screen flex items-center justify-start px-6 md:px-16 bg-white">
   
-  <!-- Background Image -->
+  <!-- Background Image (Cat Image with Animation) -->
   <div class="absolute inset-0 bg-cover bg-no-repeat bg-right-bottom md:bg-right
-              bottom-0 right-[-30px] md:bottom-[-30px] md:right-0"
+              bottom-0 right-[-30px] md:bottom-[-30px] md:right-0 animate-fadeInUp"
        style="background-image: url('Assignment_03_Category_0001/c1-assets/cat-big.png'); background-size: contain;">
   </div>
 
@@ -101,12 +101,29 @@
 
 </section>
 
+<!-- Tailwind Custom Animation -->
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeInUp {
+    animation: fadeInUp 1s ease-out;
+  }
+</style>
 
 
 
 
 <!-- Browse By Categories Section -->
-<section class="bg-white py-10">
+<section class="bg-white py-10 animate-fadeInUp">
   <div class="max-w-7xl mx-auto px-6">
     <!-- Section Title -->
     <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">
@@ -116,48 +133,48 @@
     <!-- Categories Grid -->
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 justify-items">
       <!-- Category Card -->
-      <div class="flex flex-col items-center bg-yellow-200 p-4 sm:p-5 rounded-lg shadow-md">
-        <div class="w-20 h-20 flex items-center justify-center bg-white rounded-full mb-3">
+      <div class="flex flex-col items-center bg-yellow-200 p-4 sm:p-5 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+        <div class="w-20 h-20 flex items-center justify-center bg-white rounded-full mb-3 animate-bounceHover">
           <img src="Assignment_03_Category_0001/c1-assets/dog-cartoon.png" alt="Dog" class="w-12 h-12">
         </div>
         <h3 class="text-lg font-bold text-gray-900">Dog</h3>
         <p class="text-gray-500 text-sm">3 items</p>
       </div>
 
-      <div class="flex flex-col items-center bg-yellow-200 p-4 sm:p-5 rounded-lg shadow-md">
-        <div class="w-20 h-20 flex items-center justify-center bg-white rounded-full mb-3">
+      <div class="flex flex-col items-center bg-yellow-200 p-4 sm:p-5 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+        <div class="w-20 h-20 flex items-center justify-center bg-white rounded-full mb-3 animate-bounceHover">
           <img src="Assignment_03_Category_0001/c1-assets/fish-cartoon.png" alt="Fish" class="w-12 h-12">
         </div>
         <h3 class="text-lg font-bold text-gray-900">Fish</h3>
         <p class="text-gray-500 text-sm">3 items</p>
       </div>
 
-      <div class="flex flex-col items-center bg-yellow-200 p-4 sm:p-5 rounded-lg shadow-md">
-        <div class="w-20 h-20 flex items-center justify-center bg-white rounded-full mb-3">
+      <div class="flex flex-col items-center bg-yellow-200 p-4 sm:p-5 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+        <div class="w-20 h-20 flex items-center justify-center bg-white rounded-full mb-3 animate-bounceHover">
           <img src="Assignment_03_Category_0001/c1-assets/cat-cartoon.png" alt="Cat" class="w-12 h-12">
         </div>
         <h3 class="text-lg font-bold text-gray-900">Cat</h3>
         <p class="text-gray-500 text-sm">3 items</p>
       </div>
 
-      <div class="flex flex-col items-center bg-yellow-200 p-4 sm:p-5 rounded-lg shadow-md">
-        <div class="w-20 h-20 flex items-center justify-center bg-white rounded-full mb-3">
+      <div class="flex flex-col items-center bg-yellow-200 p-4 sm:p-5 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+        <div class="w-20 h-20 flex items-center justify-center bg-white rounded-full mb-3 animate-bounceHover">
           <img src="Assignment_03_Category_0001/c1-assets/bird-cartoon.png" alt="Birds" class="w-12 h-12">
         </div>
         <h3 class="text-lg font-bold text-gray-900">Birds</h3>
         <p class="text-gray-500 text-sm">3 items</p>
       </div>
 
-      <div class="flex flex-col items-center bg-yellow-200 p-4 sm:p-5 rounded-lg shadow-md">
-        <div class="w-20 h-20 flex items-center justify-center bg-white rounded-full mb-3">
+      <div class="flex flex-col items-center bg-yellow-200 p-4 sm:p-5 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+        <div class="w-20 h-20 flex items-center justify-center bg-white rounded-full mb-3 animate-bounceHover">
           <img src="Assignment_03_Category_0001/c1-assets/mouse-cartoon.png" alt="Small Pet" class="w-12 h-12">
         </div>
         <h3 class="text-lg font-bold text-gray-900">Small Pet</h3>
         <p class="text-gray-500 text-sm">3 items</p>
       </div>
 
-      <div class="flex flex-col items-center bg-yellow-200 p-4 sm:p-5 rounded-lg shadow-md">
-        <div class="w-20 h-20 flex items-center justify-center bg-white rounded-full mb-3">
+      <div class="flex flex-col items-center bg-yellow-200 p-4 sm:p-5 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+        <div class="w-20 h-20 flex items-center justify-center bg-white rounded-full mb-3 animate-bounceHover">
           <img src="Assignment_03_Category_0001/c1-assets/rabbit-cartoon.png" alt="Rabbit" class="w-12 h-12">
         </div>
         <h3 class="text-lg font-bold text-gray-900">Rabbit</h3>
@@ -166,8 +183,40 @@
     </div>
   </div>
 </section>
+
+<!-- Tailwind Custom Animations -->
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeInUp {
+    animation: fadeInUp 1s ease-out;
+  }
+
+  @keyframes bounceHover {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+  .animate-bounceHover:hover {
+    animation: bounceHover 0.5s ease-in-out infinite;
+  }
+</style>
+
 <!-- Trending Pet Products Section -->
-<section class="bg-pink-50 py-10">
+<section class="bg-pink-50 py-10 animate-fadeInUp">
   <div class="max-w-7xl mx-auto px-6">
     <!-- Section Title -->
     <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">
@@ -177,7 +226,7 @@
     <!-- Content Layout -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <!-- Large Card (Left Side) -->
-      <div class="bg-yellow-200 p-6 rounded-lg shadow-md relative flex flex-col justify-between">
+      <div class="bg-yellow-200 p-6 rounded-lg shadow-md relative flex flex-col justify-between hover:scale-105 transition-transform duration-300">
         <div>
           <h3 class="text-2xl font-bold text-gray-900 mb-4">
             T-Shirt For Dogs
@@ -187,7 +236,7 @@
           </p>
         </div>
         <div>
-          <button class="px-6 py-3 text-black bg-white hover:bg-gray-900 rounded-lg font-medium">
+          <button class="px-6 py-3 text-black bg-white hover:bg-gray-900 hover:scale-110 transition-transform duration-300 rounded-lg font-medium">
             Shop Now
           </button>
         </div>
@@ -195,123 +244,165 @@
         <img 
           src="Assignment_03_Category_0001/c1-assets/cute-pet-small.png" 
           alt="Dog with T-Shirt" 
-          class="absolute bottom-0 right-0 w-32 h-auto object-contain"
+          class="absolute bottom-0 right-0 w-32 h-auto object-contain animate-bounceHover"
         />
       </div>
 
-     <!-- Small Cards Grid (Right Side) -->
-<div class="md:col-span-2 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-  <!-- Small Card 1 -->
-  <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
-    <img 
-      src="Assignment_03_Category_0001/c1-assets/dog-cartoon.png" 
-      alt="Pet Bed" 
-      class="w-16 h-16 mr-4 rounded-md bg-pink-50 p-1 border border-gray-300"
-    />
-    <div>
-      <h4 class="text-lg font-bold text-gray-900">Pet Bed</h4>
-      <p class="text-yellow-500 font-bold text-sm">4.5 ★</p>
-      <p class="text-gray-500">$39.99</p>
-    </div>
-  </div>
+      <!-- Small Cards Grid (Right Side) -->
+      <div class="md:col-span-2 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Small Cards with Staggered Fade-in Animation -->
+        <!-- Card 1 -->
+        <div class="bg-white p-4 rounded-lg shadow-md flex items-center hover:scale-105 transition-transform duration-300 animate-staggered">
+          <img src="Assignment_03_Category_0001/c1-assets/dog-cartoon.png" alt="Pet Bed" 
+               class="w-16 h-16 mr-4 rounded-md bg-pink-50 p-1 border border-gray-300 animate-bounceHover"/>
+          <div>
+            <h4 class="text-lg font-bold text-gray-900">Pet Bed</h4>
+            <p class="text-yellow-500 font-bold text-sm">4.5 ★</p>
+            <p class="text-gray-500">$39.99</p>
+          </div>
+        </div>
 
-  <!-- Small Card 2 -->
-  <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
-    <img 
-      src="Assignment_03_Category_0001/c1-assets/fish-cartoon.png" 
-      alt="Pet Bed" 
-      class="w-16 h-16 mr-4 rounded-md bg-pink-50 p-1 border border-gray-300"
-    />
-    <div>
-      <h4 class="text-lg font-bold text-gray-900">Pet Bed</h4>
-      <p class="text-yellow-500 font-bold text-sm">4.5 ★</p>
-      <p class="text-gray-500">$39.99</p>
-    </div>
-  </div>
+        <!-- Card 2 -->
+        <div class="bg-white p-4 rounded-lg shadow-md flex items-center hover:scale-105 transition-transform duration-300 animate-staggered delay-100">
+          <img src="Assignment_03_Category_0001/c1-assets/fish-cartoon.png" alt="Pet Bed" 
+               class="w-16 h-16 mr-4 rounded-md bg-pink-50 p-1 border border-gray-300 animate-bounceHover"/>
+          <div>
+            <h4 class="text-lg font-bold text-gray-900">Pet Bed</h4>
+            <p class="text-yellow-500 font-bold text-sm">4.5 ★</p>
+            <p class="text-gray-500">$39.99</p>
+          </div>
+        </div>
 
-  <!-- Small Card 3 -->
-  <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
-    <img 
-      src="Assignment_03_Category_0001/c1-assets/bird-cartoon.png" 
-      alt="Pet Bed" 
-      class="w-16 h-16 mr-4 rounded-md bg-pink-50 p-1 border border-gray-300"
-    />
-    <div>
-      <h4 class="text-lg font-bold text-gray-900">Pet Bed</h4>
-      <p class="text-yellow-500 font-bold text-sm">4.5 ★</p>
-      <p class="text-gray-500">$39.99</p>
-    </div>
-  </div>
+        <!-- Card 3 -->
+        <div class="bg-white p-4 rounded-lg shadow-md flex items-center hover:scale-105 transition-transform duration-300 animate-staggered delay-200">
+          <img src="Assignment_03_Category_0001/c1-assets/bird-cartoon.png" alt="Pet Bed" 
+               class="w-16 h-16 mr-4 rounded-md bg-pink-50 p-1 border border-gray-300 animate-bounceHover"/>
+          <div>
+            <h4 class="text-lg font-bold text-gray-900">Pet Bed</h4>
+            <p class="text-yellow-500 font-bold text-sm">4.5 ★</p>
+            <p class="text-gray-500">$39.99</p>
+          </div>
+        </div>
 
-  <!-- Small Card 4 -->
-  <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
-    <img 
-      src="Assignment_03_Category_0001/c1-assets/cat-cartoon.png" 
-      alt="Pet Bed" 
-      class="w-16 h-16 mr-4 rounded-md bg-pink-50 p-1 border border-gray-300"
-    />
-    <div>
-      <h4 class="text-lg font-bold text-gray-900">Pet Bed</h4>
-      <p class="text-yellow-500 font-bold text-sm">4.5 ★</p>
-      <p class="text-gray-500">$39.99</p>
-    </div>
-  </div>
+        <!-- Card 4 -->
+        <div class="bg-white p-4 rounded-lg shadow-md flex items-center hover:scale-105 transition-transform duration-300 animate-staggered delay-300">
+          <img src="Assignment_03_Category_0001/c1-assets/cat-cartoon.png" alt="Pet Bed" 
+               class="w-16 h-16 mr-4 rounded-md bg-pink-50 p-1 border border-gray-300 animate-bounceHover"/>
+          <div>
+            <h4 class="text-lg font-bold text-gray-900">Pet Bed</h4>
+            <p class="text-yellow-500 font-bold text-sm">4.5 ★</p>
+            <p class="text-gray-500">$39.99</p>
+          </div>
+        </div>
 
-  <!-- Small Card 5 -->
-  <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
-    <img 
-      src="Assignment_03_Category_0001/c1-assets/rabbit-cartoon.png"
-      alt="Pet Bed" 
-      class="w-16 h-16 mr-4 rounded-md bg-pink-50 p-1 border border-gray-300"
-    />
-    <div>
-      <h4 class="text-lg font-bold text-gray-900">Pet Bed</h4>
-      <p class="text-yellow-500 font-bold text-sm">4.5 ★</p>
-      <p class="text-gray-500">$39.99</p>
-    </div>
+        <!-- Card 5 -->
+        <div class="bg-white p-4 rounded-lg shadow-md flex items-center hover:scale-105 transition-transform duration-300 animate-staggered delay-400">
+          <img src="Assignment_03_Category_0001/c1-assets/rabbit-cartoon.png" alt="Pet Bed" 
+               class="w-16 h-16 mr-4 rounded-md bg-pink-50 p-1 border border-gray-300 animate-bounceHover"/>
+          <div>
+            <h4 class="text-lg font-bold text-gray-900">Pet Bed</h4>
+            <p class="text-yellow-500 font-bold text-sm">4.5 ★</p>
+            <p class="text-gray-500">$39.99</p>
+          </div>
+        </div>
+      <!--card 6  -->
+      <div class="bg-white p-4 rounded-lg shadow-md flex items-center hover:scale-105 transition-transform duration-300 animate-staggered delay-400">
+        <img src="Assignment_03_Category_0001/c1-assets/rabbit-cartoon.png" alt="Pet Bed" 
+             class="w-16 h-16 mr-4 rounded-md bg-pink-50 p-1 border border-gray-300 animate-bounceHover"/>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900">Pet Bed</h4>
+          <p class="text-yellow-500 font-bold text-sm">4.5 ★</p>
+          <p class="text-gray-500">$39.99</p>
+        </div>
+      </div>
+      <!-- card 7 -->
+      <div class="bg-white p-4 rounded-lg shadow-md flex items-center hover:scale-105 transition-transform duration-300 animate-staggered delay-200">
+        <img src="Assignment_03_Category_0001/c1-assets/bird-cartoon.png" alt="Pet Bed" 
+             class="w-16 h-16 mr-4 rounded-md bg-pink-50 p-1 border border-gray-300 animate-bounceHover"/>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900">Pet Bed</h4>
+          <p class="text-yellow-500 font-bold text-sm">4.5 ★</p>
+          <p class="text-gray-500">$39.99</p>
+        </div>
+      </div>
+<!--  card 8 -->
+<div class="bg-white p-4 rounded-lg shadow-md flex items-center hover:scale-105 transition-transform duration-300 animate-staggered delay-100">
+  <img src="Assignment_03_Category_0001/c1-assets/fish-cartoon.png" alt="Pet Bed" 
+       class="w-16 h-16 mr-4 rounded-md bg-pink-50 p-1 border border-gray-300 animate-bounceHover"/>
+  <div>
+    <h4 class="text-lg font-bold text-gray-900">Pet Bed</h4>
+    <p class="text-yellow-500 font-bold text-sm">4.5 ★</p>
+    <p class="text-gray-500">$39.99</p>
   </div>
+</div>
+<!-- card 9 -->
+<div class="bg-white p-4 rounded-lg shadow-md flex items-center hover:scale-105 transition-transform duration-300 animate-staggered delay-300">
+  <img src="Assignment_03_Category_0001/c1-assets/cat-cartoon.png" alt="Pet Bed" 
+       class="w-16 h-16 mr-4 rounded-md bg-pink-50 p-1 border border-gray-300 animate-bounceHover"/>
+  <div>
+    <h4 class="text-lg font-bold text-gray-900">Pet Bed</h4>
+    <p class="text-yellow-500 font-bold text-sm">4.5 ★</p>
+    <p class="text-gray-500">$39.99</p>
+  </div>
+</div>
 
-  <!-- Small Card 6 -->
-  <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
-    <img 
-      src="Assignment_03_Category_0001/c1-assets/bird-cartoon.png" 
-      alt="Pet Bed" 
-      class="w-16 h-16 mr-4 rounded-md bg-pink-50 p-1 border border-gray-300"
-    />
-    <div>
-      <h4 class="text-lg font-bold text-gray-900">Pet Bed</h4>
-      <p class="text-yellow-500 font-bold text-sm">4.5 ★</p>
-      <p class="text-gray-500">$39.99</p>
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- Small Card 7 -->
-  <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
-    <img 
-      src="Assignment_03_Category_0001/c1-assets/pet-couch.png" 
-      alt="Pet Bed" 
-      class="w-16 h-16 mr-4 rounded-md bg-pink-50 p-1 border border-gray-300"
-    />
-    <div>
-      <h4 class="text-lg font-bold text-gray-900">Pet Bed</h4>
-      <p class="text-yellow-500 font-bold text-sm">4.5 ★</p>
-      <p class="text-gray-500">$39.99</p>
-    </div>
-  </div>
+<!-- Tailwind Custom Animations -->
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
-  <!-- Small Card 8 -->
-  <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
-    <img 
-      src="Assignment_03_Category_0001/c1-assets/fish-cartoon.png" 
-      alt="Pet Bed" 
-      class="w-16 h-16 mr-4 rounded-md bg-pink-50 p-1 border border-gray-300"
-    />
-    <div>
-      <h4 class="text-lg font-bold text-gray-900">Pet Bed</h4>
-      <p class="text-yellow-500 font-bold text-sm">4.5 ★</p>
-      <p class="text-gray-500">$39.99</p>
-    </div>
-  </div>
+  .animate-fadeInUp {
+    animation: fadeInUp 1s ease-out;
+  }
+
+  @keyframes bounceHover {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+  .animate-bounceHover:hover {
+    animation: bounceHover 0.5s ease-in-out infinite;
+  }
+
+  @keyframes staggeredFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-staggered {
+    animation: staggeredFadeIn 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+  .delay-400 { animation-delay: 0.4s; }
+</style>
+
 
   <!-- Small Card 9 -->
   <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
@@ -329,6 +420,7 @@
 </div>
 
 </section>
+
 <!-- Everyday Low Price Section -->
 <section class="bg-white py-16 mb-16">
   <div class="max-w-7xl mx-auto px-6">
